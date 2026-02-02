@@ -6,11 +6,17 @@ document.getElementById("cashOut-money").addEventListener("click",
     const pinNumber = getInputValueById("cashOut-pin");
     const mainBalance = getInnerTextById("main-balance");
 
-if (accountNumber.length === 11){
-      
+    if (accountNumber.length === 11) {
+      if (pinNumber === 4321) {
+        const sum = mainBalance - amount;
+        getInnerTextByIdAndValue("main-balance", sum);
+      }
+      else {
+        alert("invalid pin");
+      }
     }
 
-    else{
+    else {
       alert("Invalid Number");
     }
 
