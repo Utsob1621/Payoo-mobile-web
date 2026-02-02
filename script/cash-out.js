@@ -9,6 +9,7 @@ document.getElementById("cashOut-money").addEventListener("click",
 
     if (amount > mainBalance) {
       alert("invalid amount");
+      return;
     }
 
 
