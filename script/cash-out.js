@@ -18,10 +18,9 @@ document.getElementById("cashOut-money").addEventListener("click",
 
         const div = document.createElement("div");
         div.innerHTML = `
-        <h1>bank ${selectedBank}<h1/>
-        <h3>added money ${amount}<h3/>
-        <p>from this ${account} number<p/>
-      `
+          <h1>cash out ${amount}<h1/>
+          <p>from this account ${accountNumber} number<p/>
+        `
         container.appendChild(div);
 
       }
