@@ -7,6 +7,10 @@ document.getElementById("cashOut-money").addEventListener("click",
     const mainBalance = getInnerTextById("main-balance");
     const selectedBank = document.getElementById("allBank").value;
 
+    if (amount > mainBalance) {
+      alert("invalid amount");
+    }
+
 
     if (accountNumber.length === 11) {
       if (pinNumber === 4321) {

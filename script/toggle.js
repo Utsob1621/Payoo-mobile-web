@@ -7,13 +7,13 @@ document.getElementById("transaction").style.display = "none";
 
 
 
-document.getElementById("add-money-box").addEventListener("click", function (){
+document.getElementById("add-money-box").addEventListener("click", function () {
   handleToggle("moneyAdd", "block");
   handleToggle("cashOut", "none");
   handleToggle("transaction", "none");
 })
 
-document.getElementById("cashOut-box").addEventListener("click", function (){
+document.getElementById("cashOut-box").addEventListener("click", function () {
   handleToggle("moneyAdd", "none");
   handleToggle("cashOut", "block");
   handleToggle("transaction", "none");
@@ -21,7 +21,7 @@ document.getElementById("cashOut-box").addEventListener("click", function (){
 
 
 
-document.getElementById("transaction-box").addEventListener("click", function (){
+document.getElementById("transaction-box").addEventListener("click", function () {
   handleToggle("transaction", "block");
   handleToggle("cashOut", "none");
   handleToggle("moneyAdd", "none");

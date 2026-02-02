@@ -8,6 +8,11 @@ document.getElementById("add-money").addEventListener("click",
     const mainBalance = getInnerTextById("main-balance");
     const selectedBank = document.getElementById("allBank").value;
 
+    if (amount < 0) {
+      alert("invalid amount");
+      return;
+    }
+
     if (account.length === 11) {
       if (pin === 4321) {
         const sum = mainBalance + amount;
