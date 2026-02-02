@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payoo mobile</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-slate-800">
   <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
     <header>
       <nav class="flex justify-between mx-5 items-center border-b border-slate-400 pb-2">
         <div class="flex justify-around items-center">
-          <img  src="./assets/Group.png" alt="">
+          <img src="./assets/Group.png" alt="">
           <div class="pl-1">
             <h1 class="font-bold text-3xl mb-1">$<span id="main-balance">4500</span></h1>
             <p>Available Balance</p>
@@ -23,7 +25,8 @@
       <section class="border-b rounded-3xl border-b-gray-400 pb-2 mb-5">
         <div class="mt-12 p-5">
           <h1 class="text-3xl font-bold mb-2">🔥Welcome to Payooo!</h1>
-          <p class="from-neutral-400 text-gray-600">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+          <p class="from-neutral-400 text-gray-600">Enjoy easy and convenient financial services with us. Cashout charge
+            is low and </p>
         </div>
 
         <!-- btn-1 -->
@@ -77,20 +80,127 @@
                 <option>Roket</option>
               </select>
               <fieldset class="fieldset">
-                <label  class="label">Bank Account Number</label>
-                <input id="account-number" value="01313131313" type="text" class="input" placeholder="Enter 11 digit account number"/>
+                <label class="label">Bank Account Number</label>
+                <input id="account-number" value="01313131313" type="text" class="input"
+                  placeholder="Enter 11 digit account number" />
                 <label class="label">Amount to Add</label>
                 <input id="amount" type="text" class="input" placeholder="Add Amount to withdraw" />
                 <label class="label">Pin Number</label>
-                <input value="4321" id="Account-pin" type="text" class="input" placeholder="Enter 4 digit pin number"/>
-                <button id="add-money" class="btn mt-4 rounded-3xl bg-blue-500 text-white font-bold py-6">Add Money</button>
+                <input value="4321" id="Account-pin" type="text" class="input" placeholder="Enter 4 digit pin number" />
+                <button id="add-money" class="btn mt-4 rounded-3xl bg-blue-500 text-white font-bold py-6">Add
+                  Money</button>
               </fieldset>
             </form>
           </div>
         </div>
       </section>
+
+      <section id="cashOut">
+        <h2 class="text-2xl font-bold ml-8">Cashout</h2>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-3xl">
+              <form class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Agent Number</label>
+                  <input id="account-number" value="01313131313" type="text" class="input"
+                    placeholder="Enter 11 digit account number" />
+                  <label class="label">Amount</label>
+                  <input id="cashOut-amount" type="text" class="input" placeholder="Enter amount to withdraw" />
+                  <label class="label">Pin Number</label>
+                  <input value="4321" id="cashOut-pin" type="text" class="input"
+                    placeholder="Enter 4 digit pin number" />
+                  <button id="cashOut-money" class="btn mt-4 rounded-3xl bg-blue-500 text-white font-bold py-6">Withdraw
+                    Money</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="transfer-money">
+        <h2 class="text-2xl font-bold ml-8">Transfer Money</h2>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-3xl">
+              <form class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">User Account Number</label>
+                  <input value="01313131313" type="text" class="input" placeholder="Enter 11 digit account number" />
+                  <label class="label">Amount</label>
+                  <input id="amount" type="text" class="input" placeholder="Enter amount to transfer" />
+                  <label class="label">Pin Number</label>
+                  <input value="4321" id="Account-pin" type="text" class="input"
+                    placeholder="Enter 4 digit pin number" />
+                  <button id="add-money" class="btn mt-4 rounded-3xl bg-blue-500 text-white font-bold py-6">Send
+                    Now</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ............................. -->
+      <section id="get-bonus">
+        <h2 class="text-2xl font-bold ml-8">Get Bonus</h2>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-3xl">
+              <form class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Enter Bonus Coupon</label>
+                  <input value="01313131313" type="text" class="input" placeholder="Enter your coupon" />
+                  <button id="add-money" class="btn mt-4 rounded-3xl bg-blue-500 text-white font-bold py-6">Get
+                    Bonus</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- .................................... -->
+
+      <section id="pay-bill">
+        <h2 class="text-2xl font-bold ml-8">Pay Bill</h2>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-3xl">
+              <form class="card-body">
+                <fieldset class="fieldset">
+                  <legend>Select A Bank</legend>
+                  <select class="select">
+                    <option disabled selected>Select bank</option>
+                    <option>Bkash</option>
+                    <option>Nagad</option>
+                    <option>Roket</option>
+                  </select>
+                  <label class="label">Biller Account Number</label>
+                  <input id="amount" type="text" class="input" placeholder="Enter account number" />
+                  <label class="label">Amount to Pay</label>
+                  <input id="Account-pin" type="text" class="input" placeholder="Add Amount to pay" />
+                  <label class="label">Pin Number</label>
+                  <input id="amount" type="text" class="input" placeholder="Enter 4-digit pin number" />
+                  <button id="add-money" class="btn mt-4 rounded-3xl bg-blue-500 text-white font-bold py-6">Pay
+                    Now</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ................................. -->
+      <section id="transaction">
+        <h1 class="text-2xl font-bold ml-8">Transaction History</h1>
+        <div id="transaction-history" class="mx-5">
+        </div>
+      </section>
     </header>
   </section>
-  
+
 </body>
+
 </html>
