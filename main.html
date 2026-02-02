@@ -62,6 +62,33 @@
           </div>
         </div>
       </section>
+
+      <!-- input field section-->
+      <section id="moneyAdd">
+        <h2 class="text-2xl font-bold ml-8">Add Money</h2>
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-3xl">
+            <form class="card-body">
+              <legend>Select A Bank</legend>
+              <select id="allBank" class="select">
+                <option disabled selected>Select bank</option>
+                <option>Bkash</option>
+                <option>Nagad</option>
+                <option>Roket</option>
+              </select>
+              <fieldset class="fieldset">
+                <label  class="label">Bank Account Number</label>
+                <input id="account-number" value="01313131313" type="text" class="input" placeholder="Enter 11 digit account number"/>
+                <label class="label">Amount to Add</label>
+                <input id="amount" type="text" class="input" placeholder="Add Amount to withdraw" />
+                <label class="label">Pin Number</label>
+                <input value="4321" id="Account-pin" type="text" class="input" placeholder="Enter 4 digit pin number"/>
+                <button id="add-money" class="btn mt-4 rounded-3xl bg-blue-500 text-white font-bold py-6">Add Money</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
     </header>
   </section>
   
